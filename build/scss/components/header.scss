@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+}
+.header__title {
+    margin-left: auto;
+}
+.header__account {
+    flex: 0 1 auto;
+    display: flex;
+
+}
+.header__account-img {
+    margin: 0;
+    flex: 0 0 auto;
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.header__account-title {
+    order: -1;
+    flex: 0 1 auto;
+    align-self: center;
+    margin-right: 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: right;
+}
