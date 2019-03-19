@@ -41,7 +41,7 @@
 				</div>
 				<div class="nav__list-title">Мои заказы</div>
 			</a>
-			<a href="#" class="nav__list-item">
+			<a href="#" class="nav__list-item active">
 				<div class="nav__list-icon">
 					<svg><use href="#icon-account"></use></svg>
 				</div>
@@ -92,7 +92,8 @@
 		</div>
 	</nav>
 
-	<main class="main" data-lazy-load="img/bg-home.png">
+	<main class="main">
+
 		<header class="header">
 			<div class="header__account">
 				<figure class="header__account-img">
@@ -100,10 +101,73 @@
 				</figure>
 				<div class="header__account-title">Здравствуйте, <br>Константин Константинопольский</div>
 			</div>
+			<h1 class="header__title">
+				<div class="header__title-icon">
+					<svg><use href="#icon-basket"></use></svg>
+				</div>
+				<div class="header__title-text">Мои заказы</div>
+			</h1>
 		</header>
-		<section class="section home">
-			<h1 class="title home__title">Добро пожаловать <br>в Ваш личный кабинет</h1>
-		</section>
+
+		<div class="section">
+			<div class="text">
+				<p>Вы в любой момент можете обновить вашу учетную запись и внести любые изменения в приведенные ниже данные.</p>
+			</div>
+			<form class="info">
+				<label class="info__input input-text">
+					<div>Ваше имя</div>
+					<input type="text" value="Константин">
+				</label>
+				<label class="info__input input-text">
+					<div>Ваш email</div>
+					<input type="text" value="Email@Email">
+				</label>
+				<label class="info__input input-text">
+					<div>Ваш телефон</div>
+					<input type="text" value="8 906 908 89 90">
+				</label>
+				<div class="info__date">
+					<div class="info__date-title">Дата рожденья</div>
+					<div class="info__date-box">
+						<div class="info__date-input input-select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option selected>30</option>
+							</select>
+						</div>
+						<div class="info__date-input input-select">
+							<select>
+								<option>Январь</option>
+								<option>Февраль</option>
+								<option selected>Август</option>
+							</select>
+						</div>
+						<div class="info__date-input input-select">
+							<select>
+								<option>2019</option>
+								<option>2018</option>
+								<option selected>1988</option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+				<div class="info__sex">
+					<label class="info__sex-input">
+						<input type="radio" name="sex">
+						<div>Девушка</div>
+					</label>
+					<label class="info__sex-input">
+						<input type="radio" name="sex">
+						<div>Парень</div>
+					</label>
+				</div>
+				<div class="info__submit button">
+					<button type="submit">Сохранить</button>
+				</div>
+			</form>
+		</div>
 		<footer class="footer">
 			<ul class="footer__nav">
 				<li><a href="#">Главная</a></li>

@@ -1,0 +1,111 @@
+.orders__item {
+    max-width: 58rem;
+    display: flex;
+    &:not( :first-child ) {
+        margin-top: 4rem;
+    }
+}
+.orders__item-img {
+    margin: 0;
+    flex: 0 0 auto;
+    width: 26%;
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.orders__item-box {
+    flex: 0 0 auto;
+    width: 74%;
+    margin-left: 2rem;
+
+    position: relative;
+}
+.orders__item-remove {
+    @include btn;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    transform: rotate(45deg);
+    width: 2rem;
+    height: 2rem;
+    background-image: linear-gradient(currentColor,currentColor), linear-gradient(currentColor,currentColor);
+    background-position: 0 50%, 50% 0;
+    background-size: 100% 2px, 2px 100%;
+    background-repeat: no-repeat;
+    transition: .3s;
+    &:hover, &:active {
+        opacity: .5;
+    }
+}
+.orders__item-price {
+    flex: 0 1 auto;
+    margin-right: 2rem;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+}
+.orders__item-title {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.orders__item-parameters {
+    margin-top: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.orders__item-parameters-elem {
+    flex: 0 0 auto;
+    margin-top: 1rem;
+    // width: calc( 33.3333% - 1.3333rem );
+    // &:not( :last-child ) {
+        margin-right: 2rem;
+    // }
+}
+.orders__item-parameters-elem-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #C4C4C4;
+}
+.orders__item-parameters-elem-value {
+    margin-top: .5rem;
+}
+
+
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .orders__item {
+        display: block;
+    }
+    .orders__item-img {
+        width: auto;
+    }
+    .orders__item-box {
+        width: auto;
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
+}
