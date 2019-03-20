@@ -105,7 +105,7 @@ body {
 	// }
 }
 .button {
-	margin-top: 6rem;
+	margin-top: 4rem;
 	a, button {
 		@include btn;
 		padding: 1.5rem 3.4rem;
@@ -393,7 +393,10 @@ body {
 @import 'components/form.scss';
 @import 'components/header.scss';
 @import 'components/orders.scss';
-
+@import 'components/info.scss';
+@import 'components/addresses.scss';
+@import 'components/connection.scss';
+@import 'components/profiles.scss';
 // @import 'components/articles.scss';
 // @import 'components/brands.scss';
 // @import 'components/novelty.scss';

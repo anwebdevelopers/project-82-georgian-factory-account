@@ -41,13 +41,13 @@
 				</div>
 				<div class="nav__list-title">Мои заказы</div>
 			</a>
-			<a href="#" class="nav__list-item active">
+			<a href="#" class="nav__list-item">
 				<div class="nav__list-icon">
 					<svg><use href="#icon-account"></use></svg>
 				</div>
 				<div class="nav__list-title">Моя информация</div>
 			</a>
-			<a href="#" class="nav__list-item">
+			<a href="#" class="nav__list-item active">
 				<div class="nav__list-icon">
 					<svg><use href="#icon-home"></use></svg>
 				</div>
@@ -103,69 +103,65 @@
 			</div>
 			<h1 class="header__title">
 				<div class="header__title-icon">
-					<svg><use href="#icon-account"></use></svg>
+					<svg><use href="#icon-home"></use></svg>
 				</div>
-				<div class="header__title-text">МоЯ информация</div>
+				<div class="header__title-text">АДресная книга</div>
 			</h1>
 		</header>
 
 		<div class="section">
 			<div class="text">
-				<p>Вы в любой момент можете обновить вашу учетную запись и внести любые изменения в приведенные ниже данные.</p>
+				<p>Пожалуйста, введите адрес, на который должна быть осуществлена доставка.</p>
 			</div>
-			<form class="info">
-				<label class="info__input input-text">
-					<div>Ваше имя</div>
-					<input type="text" value="Константин">
-				</label>
-				<label class="info__input input-text">
-					<div>Ваш email</div>
-					<input type="text" value="Email@Email">
-				</label>
-				<label class="info__input input-text">
-					<div>Ваш телефон</div>
-					<input type="text" value="8 906 908 89 90">
-				</label>
-				<div class="info__date">
-					<div class="info__date-title">Дата рожденья</div>
-					<div class="info__date-box">
-						<div class="info__date-input input-select">
+			<div class="addresses">
+				<form class="addresses__form">
+					<div class="addresses__form-item">
+						<label class="addresses__form-input input-text">
+							<div>Ваше полное имя</div>
+							<input type="text" value="" placeholder="Ввведите полное имя">
+						</label>
+						<label class="addresses__form-input input-text">
+							<div>Ваш телефон</div>
+							<input type="tel" value="" placeholder="+7 (___) ___-__-__">
+						</label>
+						<div class="addresses__form-input input-select">
+							<div>Страна</div>
 							<select>
-								<option>1</option>
-								<option>2</option>
-								<option selected>30</option>
+								<option>Грузия</option>
+								<option selected>Россия</option>
 							</select>
 						</div>
-						<div class="info__date-input input-select">
+						<div class="addresses__form-input input-select">
+							<div>Город</div>
 							<select>
-								<option>Январь</option>
-								<option>Февраль</option>
-								<option selected>Август</option>
-							</select>
-						</div>
-						<div class="info__date-input input-select">
-							<select>
-								<option>2019</option>
-								<option>2018</option>
-								<option selected>1988</option>
+								<option>Москва</option>
+								<option selected>Владивосток</option>
 							</select>
 						</div>
 					</div>
-				</div>
-				<div class="info__sex">
-					<label class="info__sex-input input-radio">
-						<input type="radio" name="sex" checked>
-						<div>Девушка</div>
-					</label>
-					<label class="info__sex-input input-radio">
-						<input type="radio" name="sex">
-						<div>Парень</div>
-					</label>
-				</div>
-				<div class="info__submit button">
-					<button type="submit">Сохранить</button>
-				</div>
-			</form>
+					<div class="addresses__form-item">
+						<label class="addresses__form-input input-text">
+							<div>Адрес</div>
+							<input type="text" value="" placeholder="Улица, дом, корпус">
+						</label>
+						<div class="addresses__form-input input-select">
+							<div>Регион</div>
+							<select>
+								<option>Москва</option>
+								<option selected>Дальневосточный регион</option>
+							</select>
+						</div>
+						<label class="addresses__form-input input-text">
+							<div>Индекс</div>
+							<input type="text" value="" placeholder="Введите индекс">
+						</label>
+						<div class="addresses__form-submit button">
+							<button type="submit">Сохранить адрес</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
 		</div>
 		<footer class="footer">
 			<ul class="footer__nav">

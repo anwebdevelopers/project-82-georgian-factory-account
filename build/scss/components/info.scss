@@ -1,0 +1,64 @@
+.info {
+    margin-top: 5rem;
+    width: 30%;
+}
+.info__input {
+    display: block;
+    margin-top: 2rem;
+}
+.info__date {
+    margin-top: 2rem;
+}
+.info__date-title {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: .8;
+}
+.info__date-box {
+    display: flex;
+    justify-content: space-between;
+}
+.info__date-input {
+    &:not( :first-child ) {
+        margin-left: 2rem;
+    }
+}
+.info__sex {
+    margin-top: 2rem;
+    display: flex;
+    // justify-content: space-between;
+}
+.info__sex-input {
+    &:not( :first-child ) {
+        margin-left: 2rem;
+    }
+}
+
+
+@media only screen and (max-width : 1280px) {
+    .info {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .info {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}

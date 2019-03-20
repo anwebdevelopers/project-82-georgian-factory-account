@@ -41,7 +41,7 @@
 				</div>
 				<div class="nav__list-title">Мои заказы</div>
 			</a>
-			<a href="#" class="nav__list-item active">
+			<a href="#" class="nav__list-item">
 				<div class="nav__list-icon">
 					<svg><use href="#icon-account"></use></svg>
 				</div>
@@ -59,7 +59,7 @@
 				</div>
 				<div class="nav__list-title">Способы оплаты</div>
 			</a>
-			<a href="#" class="nav__list-item">
+			<a href="#" class="nav__list-item active">
 				<div class="nav__list-icon">
 					<svg><use href="#icon-chat"></use></svg>
 				</div>
@@ -103,69 +103,97 @@
 			</div>
 			<h1 class="header__title">
 				<div class="header__title-icon">
-					<svg><use href="#icon-account"></use></svg>
+					<svg><use href="#icon-home"></use></svg>
 				</div>
-				<div class="header__title-text">МоЯ информация</div>
+				<div class="header__title-text">АДресная книга</div>
 			</h1>
 		</header>
 
 		<div class="section">
 			<div class="text">
-				<p>Вы в любой момент можете обновить вашу учетную запись и внести любые изменения в приведенные ниже данные.</p>
+				<p>Пожалуйста, введите адрес, на который должна быть осуществлена доставка.</p>
 			</div>
-			<form class="info">
-				<label class="info__input input-text">
-					<div>Ваше имя</div>
-					<input type="text" value="Константин">
-				</label>
-				<label class="info__input input-text">
-					<div>Ваш email</div>
-					<input type="text" value="Email@Email">
-				</label>
-				<label class="info__input input-text">
-					<div>Ваш телефон</div>
-					<input type="text" value="8 906 908 89 90">
-				</label>
-				<div class="info__date">
-					<div class="info__date-title">Дата рожденья</div>
-					<div class="info__date-box">
-						<div class="info__date-input input-select">
-							<select>
-								<option>1</option>
-								<option>2</option>
-								<option selected>30</option>
-							</select>
-						</div>
-						<div class="info__date-input input-select">
-							<select>
-								<option>Январь</option>
-								<option>Февраль</option>
-								<option selected>Август</option>
-							</select>
-						</div>
-						<div class="info__date-input input-select">
-							<select>
-								<option>2019</option>
-								<option>2018</option>
-								<option selected>1988</option>
-							</select>
-						</div>
+			<form class="connection">
+				<div class="connection__item">
+					<div class="connection__content">
+						<div class="connection__text">О чем бы тебе хотелось знать? </div>
+					</div>
+					<div class="connection__settings">
+						<label class="connection__check input-check">
+							<input type="checkbox">
+							<div>Выбрать все</div>
+						</label>
 					</div>
 				</div>
-				<div class="info__sex">
-					<label class="info__sex-input input-radio">
-						<input type="radio" name="sex" checked>
-						<div>Девушка</div>
-					</label>
-					<label class="info__sex-input input-radio">
-						<input type="radio" name="sex">
-						<div>Парень</div>
-					</label>
+				<div class="connection__item">
+					<div class="connection__content">
+						<div class="connection__title">Скидки и распродажи</div>
+						<div class="connection__text">Узнай, как только появятся скидки на вещи, которые тебе нравятся.</div>
+					</div>
+					<div class="connection__settings">
+						<label class="connection__check input-check">
+							<input type="checkbox">
+							<div>Адрес электронной почты</div>
+						</label>
+						<label class="connection__check input-check">
+							<input type="checkbox">
+							<div>Текстовые сообщения</div>
+						</label>
+					</div>
 				</div>
-				<div class="info__submit button">
-					<button type="submit">Сохранить</button>
+				<div class="connection__item">
+					<div class="connection__content">
+						<div class="connection__title">Новые поступления</div>
+						<div class="connection__text">Модные новинки, новости и советы по стилю: ты будешь в курсе всего в числе самых первых!</div>
+					</div>
+					<div class="connection__settings">
+						<label class="connection__check input-check">
+							<input type="checkbox">
+							<div>Адрес электронной почты</div>
+						</label>
+						<label class="connection__check input-check">
+							<input type="checkbox">
+							<div>Текстовые сообщения</div>
+						</label>
+					</div>
+				</div>
+				<div class="connection__item">
+					<div class="connection__content">
+						<div class="connection__title">Скидки и распродажи</div>
+						<div class="connection__text">Подарки ко Дню рождения, апдейты по Личному кабинету и специальные бонусы.</div>
+					</div>
+					<div class="connection__settings">
+						<label class="connection__check input-check">
+							<input type="checkbox">
+							<div>Адрес электронной почты</div>
+						</label>
+						<label class="connection__check input-check">
+							<input type="checkbox">
+							<div>Текстовые сообщения</div>
+						</label>
+					</div>
+				</div>
+				<div class="connection__item">
+					<div class="connection__content">
+						<div class="connection__title">Новости от партнеров</div>
+						<div class="connection__text">Узнай больше ою эксклюзивных коллаборациях и специальных предложениях.</div>
+					</div>
+					<div class="connection__settings">
+						<label class="connection__check input-check">
+							<input type="checkbox">
+							<div>Адрес электронной почты</div>
+						</label>
+						<label class="connection__check input-check">
+							<input type="checkbox">
+							<div>Текстовые сообщения</div>
+						</label>
+					</div>
+				</div>
+				<div class="connection__submit button">
+					<button type="button">Подтвердить</button>
 				</div>
 			</form>
+
 		</div>
 		<footer class="footer">
 			<ul class="footer__nav">
@@ -215,6 +243,13 @@
 				<path d="M32.5 4.5L1 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 				<path d="M4.5 8L1 4.5L4.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 			</symbol>
+			<symbol id="icon-pen" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M11.1111 1L15 4.88889L4.88889 15H1V11.1111L11.1111 1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</symbol>
+			<svg id="icon-cross" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M10.9 1L1 10.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M1 1L10.9 10.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
 		</svg>
 	</div>
 

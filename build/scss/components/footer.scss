@@ -38,7 +38,7 @@
             color: inherit;
             padding: 0 .2em .1em .2em;
             margin-left: -.2em;
-            background-image: linear-gradient(#fff, #fff);
+            background-image: linear-gradient($color-main, $color-main);
             background-position: 0 0;
             background-size: 100% 0;
             background-repeat: no-repeat;
@@ -46,7 +46,7 @@
             &:active,
             &:hover,
             &[ active ] {
-                color: $color-main;
+                color: #fff;
                 background-size: 100% 100%;
             }
         }

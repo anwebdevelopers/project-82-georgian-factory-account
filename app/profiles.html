@@ -41,7 +41,7 @@
 				</div>
 				<div class="nav__list-title">Мои заказы</div>
 			</a>
-			<a href="#" class="nav__list-item active">
+			<a href="#" class="nav__list-item">
 				<div class="nav__list-icon">
 					<svg><use href="#icon-account"></use></svg>
 				</div>
@@ -65,7 +65,7 @@
 				</div>
 				<div class="nav__list-title">Способы связи</div>
 			</a>
-			<a href="#" class="nav__list-item">
+			<a href="#" class="nav__list-item active">
 				<div class="nav__list-icon">
 					<svg><use href="#icon-profile"></use></svg>
 				</div>
@@ -103,69 +103,36 @@
 			</div>
 			<h1 class="header__title">
 				<div class="header__title-icon">
-					<svg><use href="#icon-account"></use></svg>
+					<svg><use href="#icon-profile"></use></svg>
 				</div>
-				<div class="header__title-text">МоЯ информация</div>
+				<div class="header__title-text">Профили в социальных сетях</div>
 			</h1>
 		</header>
 
 		<div class="section">
 			<div class="text">
-				<p>Вы в любой момент можете обновить вашу учетную запись и внести любые изменения в приведенные ниже данные.</p>
+				<p>Теперь войти стало еще проще с помощью учетных записей в социальных сетях.</p>
 			</div>
-			<form class="info">
-				<label class="info__input input-text">
-					<div>Ваше имя</div>
-					<input type="text" value="Константин">
-				</label>
-				<label class="info__input input-text">
-					<div>Ваш email</div>
-					<input type="text" value="Email@Email">
-				</label>
-				<label class="info__input input-text">
-					<div>Ваш телефон</div>
-					<input type="text" value="8 906 908 89 90">
-				</label>
-				<div class="info__date">
-					<div class="info__date-title">Дата рожденья</div>
-					<div class="info__date-box">
-						<div class="info__date-input input-select">
-							<select>
-								<option>1</option>
-								<option>2</option>
-								<option selected>30</option>
-							</select>
+			<div class="profiles">
+				<div class="profiles__item">
+					<div class="profiles__box">
+						<div class="profiles__social">
+							<div class="profiles__social-icon">
+								<img data-lazy-load="img/img-social.png" src="img/0.svg" alt="">
+							</div>
+							<div class="profiles__social-title">Facebook</div>
 						</div>
-						<div class="info__date-input input-select">
-							<select>
-								<option>Январь</option>
-								<option>Февраль</option>
-								<option selected>Август</option>
-							</select>
-						</div>
-						<div class="info__date-input input-select">
-							<select>
-								<option>2019</option>
-								<option>2018</option>
-								<option selected>1988</option>
-							</select>
+						<div class="profiles__disconnect button">
+							<button type="button">Отключиться</button>
 						</div>
 					</div>
+					<div class="profiles__content">
+						<div class="profiles__title">Вы используете эту учетную запись для входа на сайт.</div>
+						<div class="profiles__text">Константин Контстантинопольский</div>
+					</div>
 				</div>
-				<div class="info__sex">
-					<label class="info__sex-input input-radio">
-						<input type="radio" name="sex" checked>
-						<div>Девушка</div>
-					</label>
-					<label class="info__sex-input input-radio">
-						<input type="radio" name="sex">
-						<div>Парень</div>
-					</label>
-				</div>
-				<div class="info__submit button">
-					<button type="submit">Сохранить</button>
-				</div>
-			</form>
+			</div>
+
 		</div>
 		<footer class="footer">
 			<ul class="footer__nav">
@@ -215,6 +182,13 @@
 				<path d="M32.5 4.5L1 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 				<path d="M4.5 8L1 4.5L4.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 			</symbol>
+			<symbol id="icon-pen" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M11.1111 1L15 4.88889L4.88889 15H1V11.1111L11.1111 1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</symbol>
+			<svg id="icon-cross" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M10.9 1L1 10.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M1 1L10.9 10.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
 		</svg>
 	</div>
 

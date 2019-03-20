@@ -163,52 +163,52 @@ document.addEventListener( 'DOMContentLoaded', function( event ) {
     //SWIPE MOBILE CATEGORIES MENU
     //*********************************************************//
     ( function() {
-        if ( window.innerWidth <= 640 ) {
-            const nav = document.querySelector( '.nav' );
+        
+        const nav = document.querySelector( '.nav' );
 
-            let xDown = null;
-            let yDown = null;
+        let xDown = null;
+        let yDown = null;
 
-            function handleTouchStart( event ) {
-                if ( window.innerWidth > 640 ) { return; }
-                xDown = event.touches[ 0 ].clientX;
-                yDown = event.touches[ 0 ].clientY;
-            };
+        function handleTouchStart( event ) {
+            if ( window.innerWidth > 640 ) { return; }
+            xDown = event.touches[ 0 ].clientX;
+            yDown = event.touches[ 0 ].clientY;
+        };
 
-            function handleTouchMove( event ) {
-                if ( ! xDown || ! yDown ) {
-                    return;
-                }
+        function handleTouchMove( event ) {
+            if ( ! xDown || ! yDown ) {
+                return;
+            }
 
-                const xUp = event.touches[ 0 ].clientX;
-                const yUp = event.touches[ 0 ].clientY;
+            const xUp = event.touches[ 0 ].clientX;
+            const yUp = event.touches[ 0 ].clientY;
 
-                const xDiff = xDown - xUp;
-                const yDiff = yDown - yUp;
+            const xDiff = xDown - xUp;
+            const yDiff = yDown - yUp;
 
-                if ( Math.abs( xDiff ) + Math.abs( yDiff ) > 30 ) { //to deal with to short swipes
+            if ( Math.abs( xDiff ) + Math.abs( yDiff ) > 30 ) { //to deal with to short swipes
 
-                    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-                        if ( xDiff > 0 ) {/* left swipe */
-                             nav.removeAttribute( 'active' );
-                        } else {/* right swipe */
-                             nav.setAttribute( 'active', '' );
-                        }
-                    } else {
-                        if ( yDiff > 0 ) {/* up swipe */
-                        } else { /* down swipe */
-                        }
+                if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+                    if ( xDiff > 0 ) {/* left swipe */
+                         console.log(xDiff);
+                         nav.removeAttribute( 'active' );
+                    } else {/* right swipe */
+                         console.log(xDiff);
+                         nav.setAttribute( 'active', '' );
                     }
-                    /* reset values */
-                    xDown = null;
-                    yDown = null;
+                } else {
+                    if ( yDiff > 0 ) {/* up swipe */
+                    } else { /* down swipe */
+                    }
                 }
-            };
+                /* reset values */
+                xDown = null;
+                yDown = null;
+            }
+        };
 
-            nav.addEventListener( 'touchstart' , handleTouchStart, false );
-            nav.addEventListener( 'touchmove' , handleTouchMove, false );
-        }
-
+        nav.addEventListener( 'touchstart' , handleTouchStart, false );
+        nav.addEventListener( 'touchmove' , handleTouchMove, false );
     } () );
     //
     // //*********************************************************//

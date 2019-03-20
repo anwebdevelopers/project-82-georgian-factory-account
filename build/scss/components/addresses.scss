@@ -1,0 +1,126 @@
+.addresses {
+    margin-top: 5rem;
+}
+.addresses__box {
+    margin-top: 5rem;
+}
+.addresses__item {
+    margin-top: 5rem;
+}
+.addresses__item-list {
+
+}
+.addresses__item-list-string {
+    margin-top: 1.5rem;
+}
+.addresses__item-list-title {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: .8;
+}
+.addresses__item-list-value {
+    margin-top: .5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.addresses__item-text {
+    flex: 0 1 auto;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.addresses__item-edit {
+    flex: 0 1 auto;
+    display: flex;
+}
+.addresses__item-edit-button {
+    @include btn;
+    flex: 0 1 auto;
+    margin-top: 3rem;
+    &:not( :last-child ) {
+        margin-right: 4rem;
+    }
+
+    display: flex;
+    align-items: center;
+}
+.addresses__item-edit-button-title {
+    flex: 0 1 auto;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.addresses__item-edit-button-icon {
+    flex: 0 0 auto;
+    margin-left: 1rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+    svg {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.addresses__form {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+}
+.addresses__form-item {
+    flex: 0 0 auto;
+    width: 30%;
+    // margin-top: 5rem;
+    &:not( :nth-child( 3n + 3 ) ) {
+        margin-right: 5%;
+    }
+}
+.addresses__form-input {
+    display: block;
+    margin-top: 2rem;
+}
+
+
+@media only screen and (max-width : 1280px) {
+    .addresses__form-item {
+        width: 45%;
+        &:not( :nth-child( 3n + 3 ) ) {
+            margin-right: 0;
+        }
+        &:not( :nth-child( 2n + 2 ) ) {
+            margin-right: 10%;
+        }
+    }
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .addresses-form {
+        display: block;
+    }
+    .addresses__form-item {
+        width: auto;
+        &:not( :nth-child( 2n + 2 ) ) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}

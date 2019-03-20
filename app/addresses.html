@@ -41,13 +41,13 @@
 				</div>
 				<div class="nav__list-title">Мои заказы</div>
 			</a>
-			<a href="#" class="nav__list-item active">
+			<a href="#" class="nav__list-item">
 				<div class="nav__list-icon">
 					<svg><use href="#icon-account"></use></svg>
 				</div>
 				<div class="nav__list-title">Моя информация</div>
 			</a>
-			<a href="#" class="nav__list-item">
+			<a href="#" class="nav__list-item active">
 				<div class="nav__list-icon">
 					<svg><use href="#icon-home"></use></svg>
 				</div>
@@ -103,69 +103,70 @@
 			</div>
 			<h1 class="header__title">
 				<div class="header__title-icon">
-					<svg><use href="#icon-account"></use></svg>
+					<svg><use href="#icon-home"></use></svg>
 				</div>
-				<div class="header__title-text">МоЯ информация</div>
+				<div class="header__title-text">АДресная книга</div>
 			</h1>
 		</header>
 
 		<div class="section">
 			<div class="text">
-				<p>Вы в любой момент можете обновить вашу учетную запись и внести любые изменения в приведенные ниже данные.</p>
+				<p>Пожалуйста, введите адрес, на который должна быть осуществлена доставка.</p>
 			</div>
-			<form class="info">
-				<label class="info__input input-text">
-					<div>Ваше имя</div>
-					<input type="text" value="Константин">
-				</label>
-				<label class="info__input input-text">
-					<div>Ваш email</div>
-					<input type="text" value="Email@Email">
-				</label>
-				<label class="info__input input-text">
-					<div>Ваш телефон</div>
-					<input type="text" value="8 906 908 89 90">
-				</label>
-				<div class="info__date">
-					<div class="info__date-title">Дата рожденья</div>
-					<div class="info__date-box">
-						<div class="info__date-input input-select">
-							<select>
-								<option>1</option>
-								<option>2</option>
-								<option selected>30</option>
-							</select>
+			<div class="addresses">
+				<div class="addresses__box">
+					<div class="addresses__item">
+						<div class="addresses__item-list">
+							<div class="addresses__item-list-string">
+								<div class="addresses__item-list-title">Ваше полное имя</div>
+								<div class="addresses__item-list-value">Константин Контстантинопольский</div>
+							</div>
+							<div class="addresses__item-list-string">
+								<div class="addresses__item-list-title">Ваш телефон</div>
+								<div class="addresses__item-list-value">+7 (961)973-80-77</div>
+							</div>
+							<div class="addresses__item-list-string">
+								<div class="addresses__item-list-title">Страна</div>
+								<div class="addresses__item-list-value">Россия</div>
+							</div>
+							<div class="addresses__item-list-string">
+								<div class="addresses__item-list-title">Город</div>
+								<div class="addresses__item-list-value">Владивосток</div>
+							</div>
+							<div class="addresses__item-list-string">
+								<div class="addresses__item-list-title">Адрес</div>
+								<div class="addresses__item-list-value">Улица Ленина, 5/3</div>
+							</div>
+							<div class="addresses__item-list-string">
+								<div class="addresses__item-list-title">Регион</div>
+								<div class="addresses__item-list-value">Дальневосточный регион</div>
+							</div>
+							<div class="addresses__item-list-string">
+								<div class="addresses__item-list-title">Индекс</div>
+								<div class="addresses__item-list-value">150087</div>
+							</div>
 						</div>
-						<div class="info__date-input input-select">
-							<select>
-								<option>Январь</option>
-								<option>Февраль</option>
-								<option selected>Август</option>
-							</select>
-						</div>
-						<div class="info__date-input input-select">
-							<select>
-								<option>2019</option>
-								<option>2018</option>
-								<option selected>1988</option>
-							</select>
+						<div class="addresses__item-text">Это ваш адрес доставки по умолчанию</div>
+						<div class="addresses__item-edit">
+							<button type="button" class="addresses__item-edit-button">
+								<div class="addresses__item-edit-button-title">Редактировать</div>
+								<div class="addresses__item-edit-button-icon">
+									<svg><use href="#icon-pen"></use></svg>
+								</div>
+							</button>
+							<button type="button" class="addresses__item-edit-button">
+								<div class="addresses__item-edit-button-title">Удалить</div>
+								<div class="addresses__item-edit-button-icon">
+									<svg><use href="#icon-cross"></use></svg>
+								</div>
+							</button>
 						</div>
 					</div>
 				</div>
-				<div class="info__sex">
-					<label class="info__sex-input input-radio">
-						<input type="radio" name="sex" checked>
-						<div>Девушка</div>
-					</label>
-					<label class="info__sex-input input-radio">
-						<input type="radio" name="sex">
-						<div>Парень</div>
-					</label>
-				</div>
-				<div class="info__submit button">
-					<button type="submit">Сохранить</button>
-				</div>
-			</form>
+			</div>
+			<div class="addresses-add button">
+				<button type="button">Добавить адрес</button>
+			</div>
 		</div>
 		<footer class="footer">
 			<ul class="footer__nav">
@@ -215,6 +216,13 @@
 				<path d="M32.5 4.5L1 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 				<path d="M4.5 8L1 4.5L4.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 			</symbol>
+			<symbol id="icon-pen" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M11.1111 1L15 4.88889L4.88889 15H1V11.1111L11.1111 1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</symbol>
+			<svg id="icon-cross" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M10.9 1L1 10.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M1 1L10.9 10.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
 		</svg>
 	</div>
 

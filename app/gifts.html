@@ -35,13 +35,13 @@
 			</a>
 		</figure>
 		<div class="nav__list">
-			<a href="orders.html" class="nav__list-item">
+			<a href="orders.html" class="nav__list-item active">
 				<div class="nav__list-icon">
 					<svg><use href="#icon-basket"></use></svg>
 				</div>
 				<div class="nav__list-title">Мои заказы</div>
 			</a>
-			<a href="#" class="nav__list-item active">
+			<a href="#" class="nav__list-item">
 				<div class="nav__list-icon">
 					<svg><use href="#icon-account"></use></svg>
 				</div>
@@ -93,7 +93,6 @@
 	</nav>
 
 	<main class="main">
-
 		<header class="header">
 			<div class="header__account">
 				<figure class="header__account-img">
@@ -103,70 +102,20 @@
 			</div>
 			<h1 class="header__title">
 				<div class="header__title-icon">
-					<svg><use href="#icon-account"></use></svg>
+					<svg><use href="#icon-star"></use></svg>
 				</div>
-				<div class="header__title-text">МоЯ информация</div>
+				<div class="header__title-text">Подарочные карты и сертификаты</div>
 			</h1>
 		</header>
-
-		<div class="section">
+		<section class="section">
+			<h1 class="title">У вас нет подарочных сертификатов</h1>
 			<div class="text">
-				<p>Вы в любой момент можете обновить вашу учетную запись и внести любые изменения в приведенные ниже данные.</p>
+				<p>В настоящее время у вас нет подарочных сертификатов, привязанных к вашей учетной <br>записи. Вы можете использовать или купить сертификат прямо сейчас.</p>
 			</div>
-			<form class="info">
-				<label class="info__input input-text">
-					<div>Ваше имя</div>
-					<input type="text" value="Константин">
-				</label>
-				<label class="info__input input-text">
-					<div>Ваш email</div>
-					<input type="text" value="Email@Email">
-				</label>
-				<label class="info__input input-text">
-					<div>Ваш телефон</div>
-					<input type="text" value="8 906 908 89 90">
-				</label>
-				<div class="info__date">
-					<div class="info__date-title">Дата рожденья</div>
-					<div class="info__date-box">
-						<div class="info__date-input input-select">
-							<select>
-								<option>1</option>
-								<option>2</option>
-								<option selected>30</option>
-							</select>
-						</div>
-						<div class="info__date-input input-select">
-							<select>
-								<option>Январь</option>
-								<option>Февраль</option>
-								<option selected>Август</option>
-							</select>
-						</div>
-						<div class="info__date-input input-select">
-							<select>
-								<option>2019</option>
-								<option>2018</option>
-								<option selected>1988</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="info__sex">
-					<label class="info__sex-input input-radio">
-						<input type="radio" name="sex" checked>
-						<div>Девушка</div>
-					</label>
-					<label class="info__sex-input input-radio">
-						<input type="radio" name="sex">
-						<div>Парень</div>
-					</label>
-				</div>
-				<div class="info__submit button">
-					<button type="submit">Сохранить</button>
-				</div>
-			</form>
-		</div>
+			<div class="button">
+				<a href="#">Купить</a>
+			</div>
+		</section>
 		<footer class="footer">
 			<ul class="footer__nav">
 				<li><a href="#">Главная</a></li>
