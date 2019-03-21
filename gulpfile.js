@@ -118,7 +118,7 @@ gulp.task( 'scripts', () => {
     return gulp.src( [
         'app/libs/cssrelpreload/cssrelpreload.js',
         'app/libs/IntersectionObserver/IntersectionObserver.js',
-        'app/libs/jquery-3.3.1/jquery-3.3.1.min.js',
+        // 'app/libs/jquery-3.3.1/jquery-3.3.1.min.js',
         // 'app/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js',
         // 'app/libs/noUiSlider/nouislider.min.js',
         // 'app/libs/tippyjs/index.js',
